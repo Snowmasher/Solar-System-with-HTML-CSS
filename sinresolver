@@ -1,0 +1,224 @@
+<div id="solar-system">
+        <!--Sol-->
+        <div id="sol" class="planeta">
+            <img src="./img/sol.png">
+
+        </div>
+        <!--Mercurio-->
+        <div id="mercurio" class="planeta">
+            <img src="./img/mercurio.png">
+        </div>
+        <!--Venus-->
+        <div id="venus" class="planeta">
+            <img src="./img/venus.png">
+        </div>
+        <!--Tierra-->
+        <div id="tierra" class="planeta">
+            <img src="./img/tierra.png">
+        </div>
+        <!--Marte-->
+        <div id="marte" class="planeta">
+            <img src="./img/marte.png">
+        </div>
+        <!--Jupiter-->
+        <div id="jupiter" class="planeta">
+            <img src="./img/jupiter.png">
+        </div>
+        <!--Saturno-->
+        <div id="saturno" class="planeta">
+            <img src="./img/saturno.png">
+        </div>
+        <!--Neptuno-->
+        <div id="neptuno" class="planeta">
+            <img src="./img/neptuno.png">
+        </div>
+        <!--Urano-->
+        <div id="urano" class="planeta">
+            <img src="./img/urano.png">
+        </div>
+        <!--Pluton sigue siendo un planeta para mi :( -->
+        <div id="pluton" class="planeta">
+            <img src="./img/pluton.png">
+        </div>
+    </div>
+
+    body{
+    z-index: 1;
+    background: url("../img/background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+}
+header{
+    color: antiquewhite;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#solar-system{
+    padding: 0px;
+    display: flex;
+    height: 800px;
+    width: 800px;
+    /*flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+    position: relative;
+    list-style: none;
+    -webkit-transition: all 0.09s ease-in;
+    -moz-transition: all 0.09s ease-in;
+    -o-transition: all 0.09s ease-in;
+    transition: all 0.09s ease-in;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#solar-system li{    
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+    border: 2px solid #394057;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: orbita;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+#solar-system img{
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+}
+
+#sol{
+    top: 365px;
+    left: 365px;
+    
+}
+
+#sol img{
+    height: 70px;
+    width: 70px;
+}
+
+#mercurio{
+    padding: 50px;
+    animation-duration: 8s;
+}
+
+#mercurio img{
+    height: 10px;
+    width: 10px;
+}
+
+#venus{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+    
+}
+
+#venus img{
+    height: 20px;
+    width: 20px;
+}
+
+#tierra{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#tierra img{
+    height: 20px;
+    width: 20px;
+}
+
+#marte{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#marte img{
+    height: 15px;
+    width: 15px;
+}
+
+#jupiter{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#jupiter img{
+    height: 35px;
+    width: 35px;
+}
+
+#saturno{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#saturno img{
+    height: 40px;
+    width: 56px;
+}
+
+#neptuno{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#neptuno img{
+    height: 22px;
+    width: 22px;
+}
+
+#urano{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#urano img{
+    height: 22px;
+    width: 22px;
+}
+
+#pluton{
+    justify-self: center;
+    align-self: center;
+    animation-duration: 7s;
+}
+
+#pluton img{
+    height: 10px;
+    width: 10px;
+}
+
+@keyframes orbita{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
